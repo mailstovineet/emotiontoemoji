@@ -1,0 +1,94 @@
+
+<html>
+  <head>
+    <title>Emotion To Emoji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+
+      <br><br>
+<h1>Emotion Guesser</h1>
+<div onmouseover="change_emoji();" onmouseleave="change_back();" id="emojis" class="btn btn-info";>
+  <span id="span1">&#128512;</span>
+  <span id="span2">&#128524;</span>
+  <span id="span3">&#128530;</span>
+  <span id="span4">&#128531;</span>
+  <span id="span5">&#128548;</span>
+  <span id="span6">&#128552;</span>
+</div>
+<br>
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<hr>
+        <b style="font-size:30px;">Are you....?</b>
+        <hr>
+        <b style="color: blue">Sad?</b>
+        <hr>
+        <b style="color: red">Furious?</b>
+        <hr>
+        <b style="color: purple">Anxious/Scared?</b>
+        <hr>
+        <b style="color: gray">Bored?</b>
+        <hr>
+        <b style="color: green">Thoughtful?</b>
+        <hr>
+        <b style="color: orange">Confused?</b>
+        <hr>
+        <b style="color: yellow">Happy?</b>
+        <hr>
+        <br>
+        <br>
+      </p>
+      <div id="button1" class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam - </label>
+        <div id="camera"></div>
+        <br>
+        <br>
+        <button id="take_image" onclick="takepicture();">Take Picture</button>
+      </div>
+      <div id="button2" class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br>
+        <br>
+        <button id="id_img" onclick="analyze_picture();">Identify Emotion</button>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div id="pr1">
+        <br>
+        <br>
+        <h2>Prediction 1</h2>
+        <br>
+        <h2 id="emoji1"></h2>
+        <br>
+        <h3 id="pre1"></h3>
+      <br>
+      <br>
+      <h2>Prediction 2</h2>
+      <br>
+      <h2 id="emoji2"></h2>
+      <br>
+      <h3 id="pre2"></h3>
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

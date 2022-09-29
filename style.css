@@ -1,0 +1,53 @@
+body
+{
+  color: white;
+  background: #c0d3ff;
+  text-align:center;
+}
+span
+{
+  font-size: 30px;
+}
+#result
+{
+  border: 2px dashed black;
+  width: 360px;
+  height: 360px; 
+  display: block;
+}
+#result_emotion_name ,#result_emotion_name2  
+{
+  color: black;
+}
+.emotion_name
+{
+  font-size: 40px;
+}
+.emoji
+{
+  font-size:48px;
+}
+#emojis:hover{
+  background-color:dodgerblue;
+}
+#button1{
+  margin-left:380px;
+}
+#button2{
+  margin-left:380px;
+}
+#pr1{
+  margin-top:800px;
+}
+#take_image{
+  background-color:black;
+}
+#id_img{
+  background-color:black;
+}
+#camera{
+  border: 2px dashed black;
+  width: 360px;
+  height: 160px; 
+  display: block;
+}
